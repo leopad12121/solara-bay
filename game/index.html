@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solara Bay — an open-world crime game</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0c1218;
+    height: 100%;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  #wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  canvas {
+    width: 1280px;
+    height: 720px;
+    max-width: 100vw;
+    max-height: 100vh;
+    background: #7fae5a;
+    image-rendering: auto;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
